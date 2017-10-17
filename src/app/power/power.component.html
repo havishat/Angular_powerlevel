@@ -1,0 +1,24 @@
+
+<fieldset>
+    <legend> Power component </legend>
+            <header>
+                    <form (submit)="onSubmit()">
+                    Initial Power Level: 
+                    <input type="number" max="100" min="0" [(ngModel)]="newpower" name="power">
+                    <input type="submit" value = "Calculate Power">
+                    
+                    </form>
+                    <img src = "../assets/download.jpeg">
+                </header>
+                <section>
+                    <app-human [power]='currentpower'> </app-human>
+                    <app-saiyan [power]='currentpower * 10'> </app-saiyan>
+                    <app-super-saiyan [power]='currentpower * 90'> </app-super-saiyan>
+                    <app-super-saiyantwo [power]='currentpower * 150'> </app-super-saiyantwo>
+                    <app-super-saiyanthree [power]='currentpower * 250'> </app-super-saiyanthree>
+                    <app-super-saiyanfour [power]='currentpower * 500'> </app-super-saiyanfour>
+                </section>
+</fieldset>
+
+
+

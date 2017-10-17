@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <fieldset><legend> Saiyan component </legend>
+        <h3>Power Level: {{power}}</h3>
+        <h1 *ngIf="power > 9000 && power <= 20000">Over 9000!</h1>
+        <h1 *ngIf="power > 20000 && power < 50000">Superlative!</h1>
+        <h1 *ngIf="power >= 50000">The One!</h1>
+        </fieldset> 
+    </body>
+</html>
